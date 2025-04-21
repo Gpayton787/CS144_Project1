@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gregory Payton">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<title>form</title>
+</head>
+
+<body>
+    <div id="menu-overlay">
+
+        <div>
+            <div>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
+                        </svg>
+                </button>
+            </div>
+        </div>
+       
+        <div>
+            <ul>
+                <li><a href="/form.html">order online</a></li>
+                <li><a href="/">home</a></li>
+                <li><a href="/menu.html">menu</a></li>
+            </ul>
+        </div>
+    </div>
+    <nav>
+        <div>
+            <h1 id="title_name" title="The Baratie">Baratie</h1>
+        </div>
+
+        <div>
+            <button>
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#000000" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"></path> </g></svg>
+            </button>
+        </div>
+        <div class="wide-menu">
+            <a href="/form.html" >order online</a>
+            <a href="/" >home</a>
+            <a href="/menu.html">menu</a>
+        </div>
+    </nav>
+
+    <div id="form-section">
+        <form>
+            <fieldset>
+                <legend>Place an order</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" maxlength="15"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="tel"></label>Phone Number<br>
+                <input type="tel" id="tel" name="tel"><br>
+                <label for="number"></label>Quantity<br> 
+                <input type="number" id="number" name="number" min="0" max="100" value="1"><br> 
+
+
+
+                <label for="slider">Choose spice level </label><br> 
+                <input
+                type="range"
+                name="slider"
+                id="slider"
+                min="0"
+                max="100"
+                step="1"
+                value="0">
+                <output class="price-output" for="price"></output><br>
+                <div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+ 
+
+    <script src="script.js"></script>
+</body>
+
+</html>
